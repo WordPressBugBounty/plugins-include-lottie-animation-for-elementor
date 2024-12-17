@@ -149,7 +149,7 @@ class Json_Based_Animation_Addon_Kap_Asias extends Widget_Base {
 			]
 		);
 		
-		$this->add_control(
+		$this->add_responsive_control(
 			'la_section_duration',
 			[
 				'label' => esc_html__( 'Duration', 'jbafe' ),
@@ -171,7 +171,7 @@ class Json_Based_Animation_Addon_Kap_Asias extends Widget_Base {
 				],
 			]
 		);
-		$this->add_control(
+		$this->add_responsive_control(
 			'la_section_offset',
 			[
 				'label' => esc_html__( 'Offset', 'jbafe' ),
@@ -1159,11 +1159,16 @@ class Json_Based_Animation_Addon_Kap_Asias extends Widget_Base {
 		$la_section_duration=500;
 		if(!empty($settings['la_section_duration']['size'])){
 			$la_section_duration = $settings['la_section_duration']['size'];
-		}
+		}		
+		$la_section_durationTablet = !empty($settings['la_section_duration_tablet']['size']) ? $settings['la_section_duration_tablet']['size'] : $la_section_duration;
+		$la_section_durationMobile = !empty($settings['la_section_duration_mobile']['size']) ? $settings['la_section_duration_mobile']['size'] : $la_section_durationTablet;
+
 		$la_section_offset=0;
 		if(!empty($settings['la_section_offset']['size'])){
 			$la_section_offset = $settings['la_section_offset']['size'];
 		}
+		$la_section_offsetTablet = !empty($settings['la_section_offset_tablet']['size']) ? $settings['la_section_offset_tablet']['size'] : $la_section_offset;
+		$la_section_offsetMobile = !empty($settings['la_section_offset_mobile']['size']) ? $settings['la_section_offset_mobile']['size'] : $la_section_offsetTablet;
 		
 		$loop = 0;
 		if((isset($settings['loop']) && $settings['loop']=='true')){
@@ -1219,7 +1224,11 @@ class Json_Based_Animation_Addon_Kap_Asias extends Widget_Base {
 				$kap_opt .=  ' data-play_action="'.$la_action.'"';
 				$kap_opt .=  ' data-la_scrollbased="'.$la_scrollbased.'"';
 				$kap_opt .=  ' data-la_section_duration="'.$la_section_duration.'"';
+				$kap_opt .=  ' data-la_section_duration_tablet="'.$la_section_durationTablet.'"';
+				$kap_opt .=  ' data-la_section_duration_mobile="'.$la_section_durationMobile.'"';
 				$kap_opt .=  ' data-la_section_offset="'.$la_section_offset.'"';
+				$kap_opt .=  ' data-la_section_offset_tablet="'.$la_section_offsetTablet.'"';
+				$kap_opt .=  ' data-la_section_offset_mobile="'.$la_section_offsetMobile.'"';
 				$kap_opt .=  ' data-la_start_time="'.$la_start_time.'"';
 				$kap_opt .=  ' data-la_end_time="'.$la_end_time.'"';
 			}

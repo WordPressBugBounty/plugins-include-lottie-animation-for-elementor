@@ -13,7 +13,11 @@
             data_play_action = container.data("play_action"),
             data_la_scrollbased = container.data("la_scrollbased"),
             data_la_section_duration = container.data("la_section_duration"),
+            data_la_section_duration_tablet = container.data("la_section_duration_tablet"),
+            data_la_section_duration_mobile = container.data("la_section_duration_mobile"),
             data_la_section_offset = container.data("la_section_offset"),
+            data_la_section_offset_tablet = container.data("la_section_offset_tablet"),
+            data_la_section_offset_mobile = container.data("la_section_offset_mobile"),
             data_la_start_time = container.data("la_start_time"),
             data_la_end_time = container.data("la_end_time");
 			
@@ -111,8 +115,17 @@
 			if(data_play_action === 'parallax_effect'){
 				
 				var section_offset = container.offset().top;
+                    var deviceGet = $("body").data("elementor-device-mode");
 					var section_duration = data_la_section_duration;
 					var offset_top = data_la_section_offset;
+                    if(deviceGet == "mobile"){
+						section_duration = data_la_section_duration_mobile;
+						offset_top = data_la_section_offset_mobile;
+					}
+					if(deviceGet == "tablet"){
+						section_duration = data_la_section_duration_tablet;
+						offset_top = data_la_section_offset_tablet;
+					}
 					var all_duration = section_duration + section_offset - offset_top;
 					
 					var find_scroll_perc = 0;

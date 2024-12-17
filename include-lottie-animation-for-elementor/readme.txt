@@ -2,9 +2,9 @@
 Contributors: kapasias
 Tags: elementor, elementor addon, lottie, bodymovin, animation
 Requires at least: 5.7.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.10.12
+Stable tag: 1.10.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,14 +75,21 @@ Absolutely. It will work with any theme where Elementor works.
 
 == Changelog ==
 
+= 1.10.15 =
+* Compatibility : Wordpress 6.7
+* Compatibility : Elementor 3.26
+* Lottie : Parallax Effect - Inline Duration responsive option
+* Lottie : Parallax Effect - Inline Offset responsive option
+* Few minor bugfix and improvements
+
 = 1.10.12 =
 * Compatibility : Wordpress 6.6.2
-* Compatibility : Eleemntor 3.24
+* Compatibility : Elementor 3.24
 * Few minor bugfix and improvements
 
 = 1.10.11 =
 * Compatibility : Wordpress 6.6
-* Compatibility : Eleemntor 3.23
+* Compatibility : Elementor 3.23
 * Few minor bugfix and improvements
 
 = 1.10.10 =
