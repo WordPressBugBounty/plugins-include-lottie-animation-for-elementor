@@ -4,7 +4,7 @@ Tags: elementor, elementor addon, lottie, bodymovin, animation
 Requires at least: 5.7.0
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.10.15
+Stable tag: 1.10.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +74,9 @@ Absolutely. It will work with any theme where Elementor works.
 
 
 == Changelog ==
+
+= 1.10.16 =
+* Compatibility : Elementor 3.28
 
 = 1.10.15 =
 * Compatibility : Wordpress 6.7
