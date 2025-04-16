@@ -3,7 +3,7 @@
 * Plugin Name: JSON Based Animation for Elementor
 * Plugin URI: http://lottieanimation.kapasias.com/
 * Description: Autoplay | Hover | Click | Mouse Over-Out | Parallax Effect using JSON Based Animation for Elementor and proudly developed by KAP ASIAs Team.
-* Version: 1.10.16
+* Version: 1.10.18
 * Author: KAP ASIAs
 * Author URI: http://kapasias.com
 * Text Domain: jbafe
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 // Plugin version
-defined( 'JBAFE_VERSION' ) or define( 'JBAFE_VERSION', '1.10.16' );
+defined( 'JBAFE_VERSION' ) or define( 'JBAFE_VERSION', '1.10.18' );
 define('JBAFE_PATH', plugin_dir_path(__FILE__));
 define('JBAFE_URL', plugin_dir_url(__FILE__));
 
@@ -92,13 +92,12 @@ class Ka_Json_Based_Animation_Addon {
 	// Admin notice
 	public function jbafe_top_admin_notice(){
 		?>
-			<style>.jbafe-notice.notice-success{border-left-color:#d84242;background:rgba(216, 66, 66, 0.15);}</style>
-			<div class="jbafe-notice notice notice-success is-dismissible" style="text-align:center;padding:10px 0;display:flex;align-items:center;justify-content:center;flex-direction:column;">
-				<p style="width:100%;"><?php echo esc_html__('Enjoying our ').'<strong>'.esc_html__('JSON Based Animation for Elementor?').'</strong>'.esc_html__(' We hope you liked it! If you feel this plugin helped you, You can give us a 5 star rating!').'<br>'. esc_html__('It will motivate us to serve you more !','jbafe'); ?> </p>				
-				<div><a href="http://kapasias.com/" class="button button-secondary" target="_blank" style="background:#d84242;color:#fff;border-radius:50px;outline:none;border:1px solid #d84242;">
-				<?php echo esc_html__('VISIT NOW','jbafe'); ?></a>
-				<a href="https://wordpress.org/support/plugin/include-lottie-animation-for-elementor/reviews/?filter=5" class="button button-secondary" target="_blank" style="background:#d84242;color:#fff;border-radius:50px;outline:none;border:1px solid #d84242;">
-				<?php echo esc_html__('RATE US','acfe'); ?></a></div>
+			<style>.jbafe-notice.notice-success{border-left-color:#d84242;padding:50px;background:linear-gradient(135deg, rgba(216, 66, 66, 0.15), rgba(66, 133, 216, 0.2), rgba(66, 216, 146, 0.15))}</style>
+			<div class="jbafe-notice notice notice-success is-dismissible" style="text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;">				
+				<div><br><strong style="font-size:24px;"><?php echo esc_html__( 'Supercharge Your Elementor websites with Essential Classy Addons', 'jbafe' ); ?></strong>
+				<br/><br/><?php echo esc_html__( '🔥 Enhance your Elementor Page Builder with highly customizable Essential Classy Addons. With over 150+ widgets, you can build stunning websites faster and without any coding. Both Elementor and Essential Classy Addons take your WordPress website to the next level, offering you the tools to create creative and functional websites effortlessly. Explore the most popular elements for the Elementor Builder, complete with a Theme Builder to streamline your design process in Elementor Page Builder.', 'jbafe' ); ?>
+				<br/><br/><a href="https://ecaddons.com/elements/" class="button button-secondary" target="_blank" style="background:#d84242;color:#fff;border-radius:50px;outline:none;border:1px solid #d84242;">
+				<?php echo esc_html__('Visit Essential Classy Addons Now','jbafe'); ?></a><br/></div>
 			</div>
 		<?php
 	}

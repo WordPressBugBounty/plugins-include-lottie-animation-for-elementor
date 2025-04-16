@@ -1261,7 +1261,7 @@ class Json_Based_Animation_Addon_Kap_Asias extends Widget_Base {
 		}
 			
 		if((!empty($settings['la_link']) && $settings['la_link'] == 'yes') && !empty($settings['la_link_url']['url']) && !empty($settings["la_link_delay"])){
-			$la_op .='<script>(function($){"use strict";$( document ).ready(function(){$("a.jbafe-lotties-link").click(function(e){e.preventDefault();var storeurl = this.getAttribute("href");setTimeout(function(){window.location = storeurl;}, '.$settings["la_link_delay"]["size"].');});});})(jQuery);</script>';
+			$la_op .='<script>(function($){"use strict";$( document ).ready(function(){$(document).on("click", "a.jbafe-lotties-link", function(e){e.preventDefault();var storeurl = this.getAttribute("href");setTimeout(function(){window.location = storeurl;}, '.$settings["la_link_delay"]["size"].');});});})(jQuery);</script>';
 			$la_op .='<a class="jbafe-lotties-link" href="'.esc_url($settings['la_link_url']['url']).'">';
 		}
 		

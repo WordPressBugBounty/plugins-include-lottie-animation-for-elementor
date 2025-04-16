@@ -7,8 +7,6 @@
             data_path = container.data("path"),
             data_loop = container.data("loop"),
             data_anim_renderer = container.data("anim_renderer"),
-            data_width = container.data("width"),
-            data_height = container.data("height"),
             data_playspeed = container.data("playspeed"),
             data_play_action = container.data("play_action"),
             data_la_scrollbased = container.data("la_scrollbased"),
@@ -76,7 +74,7 @@
 			
 			if(data_play_action === 'click'){					
 				kap_lotties_animation.goToAndStop(start_time, true),
-				jQuery(container_id).click(function() {
+                jQuery(container_id).on("click", function() {
 					var start_time = 1;
 					if(data_la_start_time !='' && data_la_start_time !=undefined){
 						start_time = data_la_start_time;
