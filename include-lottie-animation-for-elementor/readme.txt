@@ -2,25 +2,25 @@
 Contributors: kapasias
 Tags: elementor, elementor addon, lottie, bodymovin, animation
 Requires at least: 5.7.0
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 1.10.21
+Stable tag: 1.10.24
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Elementor addon to use creative layout to your site with smaller json file using Lottie animations.
+Creative layout to your site with smaller json file using Lottie animations.
 
 == Description ==
 
 > JSON Based Animation <a href="https://tastewp.com/new/?pre-installed-plugin-slug=elementor,essential-classy-addons-for-elementor,advanced-image-hover-effect-for-elementor,include-lottie-animation-for-elementor,advanced-chart-for-elementor,html-custom-skin-loop-build-using-elementor?pre-installed-theme-slug=hello-elementor" target="_blank">Try Testing Environment</a>
 <br/>
-> Supercharge your Elementor Page Builder with Highly customizable <a href="https://ecaddons.com/" target="_blank">Free Essential Classy Addons For Elementor</a><br/>
+> Supercharge your website with Highly customizable <a href="https://ecaddons.com/" target="_blank">Free Essential Classy Addons For Elementor</a><br/>
 
 Check below demo pages.
 
-<a href="https://lottieanimation.kapasias.com/" target="_blank">Main Demo Page</a>
-<a href="https://lottieanimation.kapasias.com/lottie-on-scroll-animation-elementor/" target="_blank">On Scroll Lottie Animation</a>
-<a href="https://lottieanimation.kapasias.com/documentation/" target="_blank">Documentation</a>
+<a href="https://ecaddons.com/elements/lottie/" target="_blank">Main Demo Page</a>
+<a href="https://ecaddons.com/elements/lottie-on-scroll-animation-elementor/" target="_blank">On Scroll Lottie Animation</a>
+<a href="https://ecaddons.com/docs/lottie-widget-tutorial/" target="_blank">Documentation</a>
 
 = Features =
 
@@ -75,6 +75,17 @@ Absolutely. It will work with any theme where Elementor works.
 
 == Changelog ==
 
+= 1.10.24 =
+* Compatibility : Elementor 3.34
+
+= 1.10.23 =
+* Compatibility : Wordpress 6.9
+* Compatibility : Elementor 3.33
+
+= 1.10.22 =
+* Compatibility : Elementor 3.32
+* Fix : Few minor bugfix and improvements
+
 = 1.10.21 =
 * Compatibility : Elementor 3.30
 
@@ -107,91 +118,6 @@ Absolutely. It will work with any theme where Elementor works.
 * Compatibility : Wordpress 6.6
 * Compatibility : Elementor 3.23
 * Few minor bugfix and improvements
-
-= 1.10.10 =
-* Elementor 3.21 Compatibility
-* Few minor bugfix and improvements
-
-= 1.10.9 =
-* Few minor fix and improvements
-
-= 1.10.8 =
-* Elementor 3.19 Compatibility
-* Few minor bugfix and improvements
-
-= 1.10.7 =
-* Elementor 3.18 Compatibility
-* Reverse Click Loop Bug fix
-* Few minor bugfix and improvements
-
-= 1.10.6 =
-* Wordpress 6.4 Compatibility
-* Elementor 3.17 Compatibility
-* Few minor bugfix and improvements
-
-= 1.10.5 =
-* Wordpress 6.3 Compatibility
-* Elementor 3.16 Compatibility
-* Few minor bugfix and improvements
-
-= 1.10.4 =
-* Elementor 3.15 Compatibility
-* Minor Bug Fix and Improvement
-
-= 1.10.3 =
-* Wordpress 6.2 Compatibility
-* Few minor bugfix and improvements
-
-= 1.10.2 =
-* Elementor 3.13 Compatibility
-* Loops Counter range increase
-* Loop condition improvement
-* Minor Bug Fix and Improvement
-
-= 1.10.1 =
-* Minor Bug Fix and Improvement
-
-= 1.10.0 =
-* Elementor 3.10 Compatibility
-* Extend Notice 100 days
-* Minor Bug Fix
-
-= 1.9.0 =
-* Elementor 3.7 Compatibility
-
-= 1.8.0 =
-* Wordpress 6.0 Compatibility
-
-= 1.7.0 =
-* Elementor 3.6 Compatibility
-
-= 1.6.0 =
-* Elementor Tag Updated
-
-= 1.5.0 =
-* Elementor Tag Updated
-
-= 1.4.0 =
-* Elementor Tag Updated
-* Security related to HTML tags validation
-* Minor Bug Fix
-
-= 1.3.0 =
-* Reverse animation on second click
-* Cursor option
-* Few minor bugfix and improvements
-
-= 1.2.0 =
-* Loop Couter
-* Few minor bugfix and improvements
-* Compatibility with Elementor 3.0
-
-= 1.1.0 =
-* Compatibility with WordPress 5.5
-* Few minor bugfix and improvements
-
-= 1.0.0 =
-* Initial version
 
 == Upgrade Notice ==
 
