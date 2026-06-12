@@ -3,12 +3,12 @@
 * Plugin Name: JSON Based Animation for Elementor
 * Plugin URI: http://lottieanimation.kapasias.com/
 * Description: Autoplay | Hover | Click | Mouse Over-Out | Parallax Effect using JSON Based Animation for Elementor and proudly developed by KAP ASIAs Team.
-* Version: 1.10.26
+* Version: 2.0
 * Author: KAP ASIAs
 * Author URI: http://kapasias.com
 * Text Domain: jbafe
-* Elementor tested up to: 4.0
-* Elementor Pro tested up to: 4.0
+* Elementor tested up to: 4.1
+* Elementor Pro tested up to: 4.1
 */
 
 // Prevent direct access to files
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 // Plugin version
-defined( 'JBAFE_VERSION' ) or define( 'JBAFE_VERSION', '1.10.26' );
+defined( 'JBAFE_VERSION' ) or define( 'JBAFE_VERSION', '2.0' );
 define('JBAFE_PATH', plugin_dir_path(__FILE__));
 define('JBAFE_URL', plugin_dir_url(__FILE__));
 
