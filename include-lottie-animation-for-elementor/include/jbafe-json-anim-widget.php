@@ -33,6 +33,9 @@ class Json_Based_Animation_Addon_Kap_Asias extends Widget_Base {
 	public function get_keywords() {
 		return [ 'animations', 'lottiefiles', 'bodylines','lottie animation','bodymoving','hover','click','mouse over out effect','parallax effect'];
 	}
+	public function get_script_depends() {
+		return [ 'jbafe-third-party-editor-js', 'jbafe-editor-js' ];
+	}
 	public function has_widget_inner_wrapper(): bool {
 		return false;
 	}

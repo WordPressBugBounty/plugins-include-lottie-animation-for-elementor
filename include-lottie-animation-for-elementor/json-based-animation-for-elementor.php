@@ -3,7 +3,7 @@
 * Plugin Name: JSON Based Animation for Elementor
 * Plugin URI: http://lottieanimation.kapasias.com/
 * Description: Autoplay | Hover | Click | Mouse Over-Out | Parallax Effect using JSON Based Animation for Elementor and proudly developed by KAP ASIAs Team.
-* Version: 2.0.3
+* Version: 2.0.4
 * Author: KAP ASIAs
 * Author URI: http://kapasias.com
 * Text Domain: jbafe
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 // Plugin version
-defined( 'JBAFE_VERSION' ) or define( 'JBAFE_VERSION', '2.0.3' );
+defined( 'JBAFE_VERSION' ) or define( 'JBAFE_VERSION', '2.0.4' );
 define('JBAFE_PATH', plugin_dir_path(__FILE__));
 define('JBAFE_URL', plugin_dir_url(__FILE__));
 
@@ -120,10 +120,12 @@ class Ka_Json_Based_Animation_Addon {
     }
 	
 	// Js and Css
-    public function includes() {		
-		wp_enqueue_script( 'jbafe-third-party-editor-js', JBAFE_URL . 'assets/js/extra/lottie.min.js',array('jquery'), JBAFE_VERSION,true);
-		wp_enqueue_script( 'jbafe-editor-js', JBAFE_URL . 'assets/js/main/jbafe_script.min.js',array('jquery'), JBAFE_VERSION,true);
-		wp_register_style( 'jbafe-la-css', JBAFE_URL . 'assets/css/jbafe_css.min.css', JBAFE_VERSION,true);
+    public function includes() {
+		// Register only. The scripts are enqueued by the widget itself (get_script_depends),
+		// so the lottie library is never loaded on pages without a JSON Animation widget.
+		wp_register_script( 'jbafe-third-party-editor-js', JBAFE_URL . 'assets/js/extra/lottie.min.js',array('jquery'), JBAFE_VERSION,true);
+		wp_register_script( 'jbafe-editor-js', JBAFE_URL . 'assets/js/main/jbafe_script.min.js',array('jquery','jbafe-third-party-editor-js'), JBAFE_VERSION,true);
+		wp_register_style( 'jbafe-la-css', JBAFE_URL . 'assets/css/jbafe_css.min.css', array(), JBAFE_VERSION);
 		
         if (isset($_GET['elementor-preview']) || (isset($_REQUEST['action']) && $_REQUEST['action'] == 'elementor')) {
            wp_enqueue_style('jbafe-la-css');
